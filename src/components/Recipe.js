@@ -7,6 +7,7 @@ class Recipe extends Component {
   state = {
     activeRecipe: []
   };
+
   componentDidMount = async () => {
     const title = this.props.location.state.recipe;
     const request = await fetch(
